@@ -41,7 +41,7 @@ class DevelopDataset:
         # use this verson if you have already created 'all_tumors" and just need to remake model_dev folder
         if need_preprocess==False:
             self.split_train_val_test(type=type)
-            # self.anonymize() --> need to fix if use again
+            #self.anonymize() --> unhash if you need data anonymized (to run on cluster) 
 
 
     def anonymize(self):
