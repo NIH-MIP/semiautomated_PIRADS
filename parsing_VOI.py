@@ -2,9 +2,8 @@ import os
 import pandas as pd
 from collections import Counter
 from functools import reduce
-from xml.etree.ElementTree import ElementTree
-from xml.etree.ElementTree import Element
-import xml.etree.ElementTree as etree
+
+#author @t_sanf
 
 
 class ParseVOI(object):
