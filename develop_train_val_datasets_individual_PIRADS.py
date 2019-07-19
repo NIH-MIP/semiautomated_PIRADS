@@ -5,15 +5,17 @@ import random
 import re
 from distutils.dir_util import copy_tree
 
+#author @t_sanf
+
 class DevelopDataset:
-    '''class to get the data into a format that can be recognized by AI'''
+    '''class to save MRI images in jpgs'''
 
     def __init__(self):
-        self.jpg=r'T:\Automated_PIRADS_database\jpg'
-        self.jpg_tumors=r'T:\Automated_PIRADS_database\jpg_tumors'
-        self.tumors = r'T:\Automated_PIRADS_database\tumors'
-        self.model_dev=r'T:\Automated_PIRADS_database\model_dev_indvPIRADS'
-        self.anonymous=r'T:\Automated_PIRADS_database\anonymous'
+        self.jpg=r'(insert path)'
+        self.jpg_tumors=r'(insert path)'
+        self.tumors = r'(insert path)'
+        self.model_dev=r'(insert path)'
+        self.anonymous=r'(insert path)'
 
 
     def process(self,need_preprocess=False,type='all'):
