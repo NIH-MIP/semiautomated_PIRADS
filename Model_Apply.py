@@ -13,17 +13,17 @@ from fastai.callbacks import *
 from fastai.callbacks.tracker import *
 from fastai.basic_train import *
 
-
+#author @t_sanf
 
 class ModelApply:
 
 
     def __init__(self):
-        self.imagedir = '/home/mip/TS/PIRADS/model_dev_indvPIRADS_all'
-        self.outdir = '/home/mip/TS/PIRADS/model_dev_indvPIRADS_all/training_log'
+        self.imagedir = '(insert path)'
+        self.outdir = '(insert path)'
         self.testPath = os.path.join(self.imagedir, 'test_val_pt')
-        self.clin_val ='/home/mip/TS/PIRADS/clin_data/clin_data/tumor_level_validation.csv'
-        self.save_dir='/home/mip/TS/PIRADS/clin_data/pred_data/'
+        self.clin_val ='(insert path)/tumor_level_validation.csv'
+        self.save_dir='(insert path)'
         self.device=0
 
 
