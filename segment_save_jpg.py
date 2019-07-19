@@ -10,6 +10,8 @@ from sklearn.preprocessing import StandardScaler
 import imageio
 import scipy.misc
 
+#author @t_sanf
+
 #from Align import Align
 from parsing_VOI import ParseVOI
 
@@ -17,11 +19,11 @@ from parsing_VOI import ParseVOI
 class SegmentAligned(ParseVOI):
 
     def __init__(self):
-        self.basePATH = r'S:\MIP\MRIClinical\development'
+        self.basePATH = r'(insert path)'
         self.databases=['surgery_cases','prostateX','consecutive']
 
-        self.save=r'T:\Automated_PIRADS_database'
-        self.save_tumors=r'T:\Automated_PIRADS_database\tumors_by_annotator'
+        self.save=r'(insert path)'
+        self.save_tumors=r'(insert path)'
 
 
     def segment_aligned_by_annotator(self,initials='bt'):
