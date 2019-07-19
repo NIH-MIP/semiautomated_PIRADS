@@ -26,25 +26,25 @@ class MultiClassProstate:
         self.val_name='val'
         self.resnet='resnet50'
         self.img_sz=224
-        self.lr=0.000001
+        self.lr=0.00001
         self.lr_range=slice(1e-7, 1e-4)
         self.bs=64 #batch size
         self.device=0 #which gpu
-        self.dc_e=200 #last layers epochs
+        self.dc_e=100 #last layers epochs
         self.all_e=20 #all epochs
         self.lighting=0.1
         self.rotate=45
         self.early_stopping=True
         self.unfreeze=False
-        self.weights = [6.,2.,1.5,1.]
+        self.weights = [10.,4.,2.,1.]
         self.model_dict={'resnet18':[models.resnet18],'resnet34':[models.resnet34],'resnet50':[models.resnet50],
             'resnet101':[models.resnet101],'resnet152':[models.resnet152]}
 
 
         #retraining
         self.retrain=False
-        self.retraindir = '/data/Stephanie_Harmon/bladder_path/all_pts/classification_042519/All_Others/10x/training_log'
-        self.save_model_name='10x_fullset_fortytwo_final_layers_tuned_04302019-0824'
+        self.retraindir = '(insert path)'
+        self.save_model_name='(insert name)'
 
     def load_jpg_from_folder(self):
         '''
