@@ -13,6 +13,7 @@ from fastai.callbacks import *
 from fastai.callbacks.tracker import *
 from fastai.basic_train import *
 
+#authors @t_sanf @drsharmon
 
 class MultiClassProstate:
 
