@@ -17,8 +17,8 @@ from fastai.basic_train import *
 class MultiClassProstate:
 
     def __init__(self):
-        self.imagedir='/home/mip/TS/PIRADS/model_dev_indvPIRADS_all'
-        self.outdir='/home/mip/TS/PIRADS/model_dev_indvPIRADS_all/training_log'
+        self.imagedir='(insert path)'
+        self.outdir='(insert path)'
         self.testPath=os.path.join(self.imagedir,'test')
         self.model_name='train'
         self.tr_name='train'
@@ -27,8 +27,8 @@ class MultiClassProstate:
         self.img_sz=224
         self.lr=0.000001
         self.lr_range=slice(1e-7, 1e-4)
-        self.bs=64
-        self.device=3
+        self.bs=64 #batch size
+        self.device=0 #which gpu
         self.dc_e=200 #last layers epochs
         self.all_e=20 #all epochs
         self.lighting=0.1
