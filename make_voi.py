@@ -7,8 +7,8 @@ import pandas as pd
 class ImportVOI:
 
     def __init__(self):
-        self.basePATH=r'T:\Automated_PIRADS_database\prostateX_vois'
-        self.filename='ProstateX-2-Images-Train.csv'
+        self.basePATH=r'(insert path)'
+        self.filename='(insert save name.csv)'
 
     def prostateX_vois(self):
         '''
