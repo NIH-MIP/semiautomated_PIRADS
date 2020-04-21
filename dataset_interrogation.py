@@ -17,7 +17,7 @@ class DatasetInterrogate:
     '''misc functions to help perform data analysis'''
 
     def __init__(self):
-        self.basePATH=r'M:'
+        self.basePATH=r''
         self.database='MRIClinical'
         self.devfolder='consecutive'
 
@@ -108,10 +108,10 @@ class DatasetInterrogate:
 class DatasetSummary:
 
     def __init__(self):
-        self.basePATH=r'C:\Users\sanfordt\Desktop\PIRADS_dataset_updated'
+        self.basePATH=r''
         self.database='revision_analysis'
-        self.workingdb='PIRADS_dataset_DO_NOT_TOUCH'
-        self.devfolder='model_dev_indvPIRADS'
+        self.workingdb=''
+        self.devfolder=''
 
     def lesions_summary(self):
         '''in file called 'tumors' evaluates the dataset characteristics'''
