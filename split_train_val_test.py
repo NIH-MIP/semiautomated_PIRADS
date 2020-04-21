@@ -7,14 +7,11 @@ from distutils.dir_util import copy_tree
 
 class DevelopDataset:
     '''class to split the data into train/val/test datasets - need to run segment_save_jpg first
-    note - the only folders needed are lesion_by_study, T2, tumors by annotator
-    if you re-process, delete tumors_by_pt, model_dev_indvPIRADS, tumors
-
     '''
     random.seed(10)
 
     def __init__(self):
-        self.basePATH=r'C:\Users\sanfordt\Desktop\PIRADS_dataset_updated\revision_analysis'
+        self.basePATH=r''
         self.lesions=os.path.join(self.basePATH,'lesions_by_study')
         self.tumors_by_pt=os.path.join(self.basePATH,'tumors_by_pt')
         self.tumors = os.path.join(self.basePATH,'tumors')
