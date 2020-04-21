@@ -20,7 +20,7 @@ class SegmentAligned(ParseVOI):
     '''function to save bounding box around tumor segmentations as .jpeg images'''
 
     def __init__(self):
-        self.basePATH = r'C:\Users\sanfordt\Desktop\PIRADS_dataset_updated\databases'  #path to root directory with databases of aligned files
+        self.basePATH = r''  #path to root directory with databases of aligned files
         self.databases=['prostateX','consecutive','surgery']               #databases of aligned files
 
         self.save=os.path.join(self.basePATH,'revision_analysis_2')  #empty directory for saving
