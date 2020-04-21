@@ -24,19 +24,19 @@ class VisionMulticlass:
         self.imagedir=''
         self.outdir=''
         self.testPath=os.path.join(self.imagedir,'test')
-        self.model_name='bot2'
+        self.model_name='model'
         self.tr_name='train'
         self.val_name='val'
         self.arch='resnet34'
         self.img_sz=80
-        self.lr=0.005
+        self.lr=0.008
         self.lr_range=slice(1e-11, 1e-5)
-        self.bs=128
+        self.bs=256
         self.device=0
         self.dc_e=20
         self.all_e=1000 #all epochs
         self.lighting=0.05
-        self.rotate=45
+        self.rotate=15
         self.weightedloss=False
         self.early_stopping=True
         self.unfreeze=True
@@ -57,7 +57,7 @@ class VisionMulticlass:
         '''
 
 
-        tfms = get_transforms(flip_vert=True,max_rotate=self.rotate,max_warp=0.05,max_lighting = self.lighting,p_lighting=0.9,p_affine=0.5)
+        tfms = get_transforms(flip_vert=True,max_rotate=self.rotate,max_warp=0.05,max_lighting = self.lighting,p_lighting=0.05,p_affine=0.5)
 
         data = (ImageList.from_folder(self.imagedir)
                 .split_by_folder(train=self.tr_name, valid=self.val_name)
